@@ -5,6 +5,7 @@ import background from "./assets/plymouth.webp";
 
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
+import NewsList from "./components/NewsList";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           </div>
         </header>
         <div className="sticky top-5">
-          <div className="flex h-32 bg-black bg-opacity-80 rounded-xl mb-1 text-white border-2 border-white">
+          <div className="flex h-32 bg-black bg-opacity-80 rounded-xl mb-1 text-white border-2 border-white border-opacity-50 p-2">
             <div className="h-full w-full">
               <div>currently playing</div>
               <button>listen live ^^</button>
@@ -33,7 +34,7 @@ function App() {
               <h2>Request a song!</h2>
             </div>
           </div>
-          <nav className="flex justify-end md:justify-between md:bg-black md:bg-opacity-70 text-gray-300 rounded mb-1">
+          <nav className="flex justify-end md:justify-between md:bg-black md:bg-opacity-70 text-gray-300 md:border-2 border-black border-opacity-40 rounded mb-1">
             <ul className="hidden md:flex">
               <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-tl-lg">
                 Home
@@ -56,17 +57,22 @@ function App() {
             </div>
           </nav>
         </div>
-        <main className="bg-purple-400 text-2xl h-screen">
+        <main className="bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6">
           <div></div>
-          <h1></h1>
-          <div>
-            <h2>
-              'The very best internet radio station from FCTG' Based in the port
-              city of Plymouth - Devon - UK.
+          <h1 className="text-5xl md:text-6xl text-center font-semibold">
+            Ferndale Community Radio Plymouth
+          </h1>
+          <div className="mt-2 text-center">
+            <h2 className="text-lg">
+              'The very best internet radio station from FCTG'
             </h2>
+            <p className="text-[1rem]">
+              Based in the port city of Plymouth - Devon - UK.
+            </p>
           </div>
+          {/* <NewsList /> */}
         </main>
-        <footer className="bg-black bg-opacity-70 rounded-b-xl text-gray-300">
+        <footer className="bg-black bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40">
           <div className="flex justify-evenly pl-5 pr-0 py-2">
             <div className="flex md:flex-row flex-col items-center">
               <BsFacebook
