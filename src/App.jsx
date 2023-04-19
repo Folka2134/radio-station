@@ -59,7 +59,7 @@ function App() {
                 Schedule
               </li>
             </ul>
-            <div className="block md:hidden mr-2">
+            <div className="block md:hidden mr-2 bg-black bg-opacity-70 rounded-l-xl p-1 border-2 border-black border-opacity-50">
               <RxHamburgerMenu size={50} color="white" />
             </div>
           </nav>
