@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App bg-[url('./assets/plymouth.webp')] bg-fixed min-h-screen relative">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div>
-      <div className="mx-6 md:mx-24 z-10 relative">
+      <div className="mx-6 md:mx-24 lg:mx-32 xl:mx-44 2xl:mx-52 z-10 relative">
         <header className="h-72 flex justify-between pt-3 mb-3">
           <div className="flex justify-center">
             <img className="h-full rounded-full" src={logo} alt="logo" />
@@ -57,20 +57,22 @@ function App() {
           </div>
         </main>
         <footer className="bg-black bg-opacity-70 rounded-b-xl text-white">
-          <div className="flex">
-            <div className="flex justify-evenly items-center w-full">
+          <div className="flex justify-evenly">
+            <div className="flex md:flex-row flex-col items-center">
               <BsFacebook
-                className="cursor-pointer"
+                className="p-2 cursor-pointer"
                 size={100}
                 color="#1877F2"
               />
               <BsTwitter
-                className="cursor-pointer"
+                className=" p-2  cursor-pointer"
                 size={100}
                 color="#1B9DF0"
               />
+            </div>
+            <div className="flex justify-evenly items-center">
               <img
-                className="h-52 cursor-pointer"
+                className="max-h-52 cursor-pointer"
                 src={logoGofundme}
                 alt="logoGofundme"
               />
