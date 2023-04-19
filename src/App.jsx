@@ -10,7 +10,7 @@ function App() {
         </header>
         <nav className="bg-green-200 rounded-t-lg">
           <ul className="flex">
-            <li className="text-xl font-semibold p-5 cursor-pointer hover:bg-green-100 rounded-tl-lg">
+            <li className="text-xl p-5 cursor-pointer hover:bg-green-100 rounded-tl-lg">
               Home
             </li>
             <li className="text-xl p-5">Radio</li>
