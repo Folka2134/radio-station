@@ -111,27 +111,25 @@ function App() {
           {/* <NewsList /> */}
         </main>
         <footer className="bg-black bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40">
-          <div className="flex justify-evenly pl-5 pr-0 py-2">
-            <div className="flex md:flex-row flex-col items-center">
+          <div className="flex justify-between pl-5 pr-0 py-2 md:px-24">
+            <div className="flex md:flex-row flex-col items-center justify-center">
               <BsFacebook
                 className="p-2 cursor-pointer"
-                size={100}
+                size={50}
                 color="#1877F2"
               />
               <BsTwitter
-                className=" max-h-24 p-2  cursor-pointer"
-                size={100}
+                className="p-2 cursor-pointer"
+                size={50}
                 color="#1B9DF0"
               />
-            </div>
-            <div className="flex justify-evenly items-center">
               <img
-                className="max-h-52 cursor-pointer"
+                className="h-16 md:h-20 cursor-pointer"
                 src={logoGofundme}
                 alt="logoGofundme"
               />
             </div>
-            <ul className="flex flex-col justify-center items-end text-">
+            <ul className="flex flex-col justify-center items-end">
               <li className="px-5 py-1 cursor-pointer hover:text-white">
                 Privacy
               </li>
