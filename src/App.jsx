@@ -56,7 +56,7 @@ function App() {
             </h2>
           </div>
         </main>
-        <footer className="bg-black bg-opacity-70 rounded-b-xl text-white">
+        <footer className="bg-black bg-opacity-70 rounded-b-xl text-gray-300">
           <div className="flex justify-evenly">
             <div className="flex md:flex-row flex-col items-center">
               <BsFacebook
@@ -77,12 +77,22 @@ function App() {
                 alt="logoGofundme"
               />
             </div>
-            <ul className="flex flex-col justify-center items-end ">
-              <li className="text-xl px-5 py-1">Privacy</li>
-              <li className="text-xl px-5 py-1">Staff</li>
-              <li className="text-xl px-5 py-1">Advertisements</li>
-              <li className="text-xl px-5 py-1">FCR Policies</li>
-              <li className="text-xl px-5 py-1">FCTG</li>
+            <ul className="flex flex-col justify-center items-end">
+              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+                Privacy
+              </li>
+              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+                Staff
+              </li>
+              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+                Advertisements
+              </li>
+              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+                FCR Policies
+              </li>
+              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+                FCTG
+              </li>
             </ul>
           </div>
         </footer>
