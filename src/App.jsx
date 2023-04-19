@@ -4,49 +4,59 @@ import logoGofundme from "./assets/gofundme-blog-image.webp";
 import background from "./assets/plymouth.webp";
 
 import { BsFacebook, BsTwitter } from "react-icons/bs";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function App() {
   return (
-    <div className="App bg-[url('./assets/plymouth.webp')] bg-fixed min-h-screen relative">
+    <div className="App bg-[url('./assets/plymouth.webp')] bg-fixed bg-cover min-h-screen relative min-w-[350px]">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div>
-      <div className="mx-6 md:mx-24 lg:mx-32 xl:mx-44 2xl:mx-52 z-10 relative">
-        <header className="h-72 flex justify-between pt-3 mb-3">
-          <div className="flex justify-center">
-            <img className="h-full rounded-full" src={logo} alt="logo" />
+      <div className="mx-6 md:mx-24 lg:mx-44 xl:mx-52 2xl:mx-72 z-10 relative">
+        <header className=" flex flex-col md:flex-row justify-center md:justify-between items-center pt-3 mb-3">
+          <div className="flex justify-center md:mr-5 mb-2">
+            <img
+              className="max-h-96 md:h-full rounded-full"
+              src={logo}
+              alt="logo"
+            />
           </div>
-          <div className="bg-black bg-opacity-80 text-white w-3/4 rounded-r-3xl">
+          <div className="hidden md:block max-h-96 h-52 bg-black bg-opacity-80 text-white w-full rounded-3xl p-3">
             banner
           </div>
         </header>
-        <div className="flex sticky h-32 bg-amber-700 rounded-lg mb-1">
-          <div className="bg-gray-200 h-full w-full">
-            <div>currently playing</div>
-            <button>listen live ^^</button>
+        <div className="sticky top-5">
+          <div className="flex h-32 bg-black bg-opacity-80 rounded-xl mb-1 text-white border-2 border-white">
+            <div className="h-full w-full">
+              <div>currently playing</div>
+              <button>listen live ^^</button>
+            </div>
+            <div className="h-full w-full">
+              <h2>Request a song!</h2>
+            </div>
           </div>
-          <div className="bg-gray-600 h-full w-full">
-            <h2>Request a song!</h2>
-          </div>
+          <nav className="flex justify-end md:justify-between md:bg-black md:bg-opacity-70 text-gray-300 rounded mb-1">
+            <ul className="hidden md:flex">
+              <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-tl-lg">
+                Home
+              </li>
+              <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200">
+                Radio
+              </li>
+              <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200">
+                News
+              </li>
+              <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200">
+                Contact
+              </li>
+              <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200">
+                Schedule
+              </li>
+            </ul>
+            <div className="block md:hidden mr-2">
+              <RxHamburgerMenu size={50} color="white" />
+            </div>
+          </nav>
         </div>
-        <nav className="bg-green-200 sticky rounded-t-lg">
-          <ul className="flex">
-            <li className="text-xl p-5 cursor-pointer hover:bg-green-100 rounded-tl-lg">
-              Home
-            </li>
-            <li className="text-xl p-5 cursor-pointer hover:bg-green-100">
-              Radio
-            </li>
-            <li className="text-xl p-5 cursor-pointer hover:bg-green-100">
-              News
-            </li>
-            <li className="text-xl p-5 cursor-pointer hover:bg-green-100">
-              Contact
-            </li>
-            <li className="text-xl p-5 cursor-pointer hover:bg-green-100">
-              Schedule
-            </li>
-          </ul>
-        </nav>
-        <main className="bg-purple-400 text-2xl">
+        <main className="bg-purple-400 text-2xl h-screen">
           <div></div>
           <h1></h1>
           <div>
@@ -57,7 +67,7 @@ function App() {
           </div>
         </main>
         <footer className="bg-black bg-opacity-70 rounded-b-xl text-gray-300">
-          <div className="flex justify-evenly">
+          <div className="flex justify-evenly pl-5 pr-0 py-2">
             <div className="flex md:flex-row flex-col items-center">
               <BsFacebook
                 className="p-2 cursor-pointer"
@@ -65,7 +75,7 @@ function App() {
                 color="#1877F2"
               />
               <BsTwitter
-                className=" p-2  cursor-pointer"
+                className=" max-h-24 p-2  cursor-pointer"
                 size={100}
                 color="#1B9DF0"
               />
@@ -77,20 +87,20 @@ function App() {
                 alt="logoGofundme"
               />
             </div>
-            <ul className="flex flex-col justify-center items-end">
-              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+            <ul className="flex flex-col justify-center items-end text-">
+              <li className="px-5 py-1 cursor-pointer hover:text-white">
                 Privacy
               </li>
-              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+              <li className="px-5 py-1 cursor-pointer hover:text-white">
                 Staff
               </li>
-              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+              <li className="px-5 py-1 cursor-pointer hover:text-white">
                 Advertisements
               </li>
-              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+              <li className="px-5 py-1 cursor-pointer hover:text-white">
                 FCR Policies
               </li>
-              <li className="text-xl px-5 py-1 cursor-pointer hover:text-white">
+              <li className="px-5 py-1 cursor-pointer hover:text-white">
                 FCTG
               </li>
             </ul>
