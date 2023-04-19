@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App bg-orange-400 min-h-screen">
+      <div className="mx-6 md:mx-24">
+        <header className="h-32 flex justify-between">
+          <div>logo</div>
+          <div className="bg-black text-white w-3/4">banner</div>
+        </header>
+        <nav className="bg-green-200 rounded-t-lg">
+          <ul className="flex">
+            <li className="text-xl font-semibold p-5 cursor-pointer hover:bg-green-100 rounded-tl-lg">
+              Home
+            </li>
+            <li className="text-xl p-5">Radio</li>
+            <li className="text-xl p-5">News</li>
+            <li className="text-xl p-5">Contact</li>
+          </ul>
+        </nav>
+        <main className="bg-purple-400 text-2xl">main</main>
+        <footer className="bg-black bg-opacity-20 rounded-b-xl">
+          <div className="flex justify-end">
+            <ul className="flex flex-col">
+              <li className="text-xl px-5 py-1">Privacy</li>
+              <li className="text-xl px-5 py-1">Staff</li>
+              <li className="text-xl px-5 py-1">Advertisements</li>
+              <li className="text-xl px-5 py-1">FCR Policies</li>
+              <li className="text-xl px-5 py-1">FCTG</li>
+            </ul>
+          </div>
+        </footer>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
