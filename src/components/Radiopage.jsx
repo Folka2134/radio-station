@@ -12,12 +12,17 @@ const Radiopage = () => {
       {/* <h1 className="text-4xl md:text-4xl text-center font-semibold">
         Ferndale Community Radio - Plymouth, Devon, UK.
       </h1> */}
-      {/* <div className="flex flex-col justify-center items-center mt-7  w-full">
-        <img className="w-96 float-right" src={studio} alt="studio" />
-        <p className="text-[1rem]">Free Text in the UK 07451223412</p>
-      </div> */}
+      <div className="flex flex-col md:flex-row justify-center items-center my-16  w-full">
+        <img className="w-96 rounded-3xl" src={studio} alt="studio" />
+        <div className="md:ml-12 text-center">
+          <p className="text-xl">
+            We are now on air 24 hours a day, 7 days a week.
+          </p>
+          <p className="text-xl">Free Text in the UK 07451223412</p>
+        </div>
+      </div>
       <div className="flex flex-col justify-center text-center">
-        <h2 className="mt-10 mb-4">Presenters</h2>
+        <h2 className="mb-7">Presenters</h2>
         <Grid />
       </div>
       {/* <NewsList /> */}

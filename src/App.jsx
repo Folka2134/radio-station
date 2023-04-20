@@ -41,19 +41,8 @@ function App() {
             banner
           </div>
         </header>
-        <div className="sticky top-5">
-          {/* PLAYER */}
-          <div className="flex h-32 bg-black bg-opacity-80 rounded-xl mb-1 text-white border-2 border-white border-opacity-50 p-2">
-            <div className="h-full w-full">
-              <div>currently playing</div>
-              <button>listen live ^^</button>
-            </div>
-            <div className="h-full w-full">
-              <h2>Request a song!</h2>
-            </div>
-          </div>
-          {/* NAV */}
-          <nav className="flex justify-end md:justify-between md:bg-black md:bg-opacity-70 text-gray-300 md:border-2 border-black border-opacity-40 rounded mb-1">
+        <div className="sticky top-0">
+          <nav className="flex justify-end md:justify-between md:bg-black md:bg-opacity-90 text-gray-300 md:border-2 border-black border-opacity-40 rounded mb-1">
             <ul className="hidden md:flex">
               <button
                 className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-tl-lg"
@@ -67,12 +56,12 @@ function App() {
               >
                 Radio
               </button>
-              <button
+              {/* <button
                 className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200"
                 onClick={() => setRoute("news")}
               >
                 News
-              </button>
+              </button> */}
               <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200">
                 Contact
               </li>
@@ -84,6 +73,17 @@ function App() {
               <RxHamburgerMenu size={50} color="white" />
             </div>
           </nav>
+          {/* PLAYER */}
+          <div className="flex h-32 bg-black bg-opacity-90 rounded-xl mb-1 text-white border-2 border-white border-opacity-50 p-2">
+            <div className="h-full w-full">
+              <div>currently playing</div>
+              <button>listen live ^^</button>
+            </div>
+            <div className="h-full w-full">
+              <h2>Request a song!</h2>
+            </div>
+          </div>
+          {/* NAV */}
         </div>
         {/* Render Main */}
         {renderSwitch(route)}
