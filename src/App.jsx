@@ -10,6 +10,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import NewsList from "./components/NewsList";
 import Homepage from "./components/Homepage";
 import Radiopage from "./components/Radiopage";
+import Contactpage from "./components/Contactpage";
 
 function renderSwitch(param) {
   switch (param) {
@@ -17,6 +18,8 @@ function renderSwitch(param) {
       return <Homepage />;
     case "radio":
       return <Radiopage />;
+    case "contact":
+      return <Contactpage />;
     default:
       return <Homepage />;
   }
@@ -42,10 +45,10 @@ function App() {
           </div>
         </header>
         <div className="sticky top-0">
-          <nav className="flex justify-end md:justify-between md:bg-black md:bg-opacity-90 text-gray-300 md:border-2 border-black border-opacity-40 rounded mb-1">
+          <nav className="flex justify-end md:justify-between md:bg-black md:bg-opacity-90 text-gray-300 md:border-2 border-black border-opacity-40 rounded-xl mb-1">
             <ul className="hidden md:flex">
               <button
-                className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-tl-lg"
+                className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-l-lg"
                 onClick={() => setRoute("home")}
               >
                 Home
@@ -62,9 +65,12 @@ function App() {
               >
                 News
               </button> */}
-              <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200">
+              <button
+                className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200"
+                onClick={() => setRoute("contact")}
+              >
                 Contact
-              </li>
+              </button>
               <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200">
                 Schedule
               </li>
