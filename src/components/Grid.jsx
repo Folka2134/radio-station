@@ -9,7 +9,7 @@ const Grid = () => {
       {presenters.map((presenter, keyId) => (
         <div key={keyId} className="card flex flex-col">
           <img
-            className="w-full h-52 object-cover object-top"
+            className="w-full h-52 object-cover object-top rounded-2xl"
             src={presenter.image}
             alt="presenter"
           />
