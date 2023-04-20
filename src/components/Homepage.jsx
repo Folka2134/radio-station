@@ -19,7 +19,15 @@ const Homepage = () => {
         <p className="text-[1rem]">
           Based in the port city of Plymouth - Devon - UK.
         </p>
+        <p className="text-[1rem] pt-4 2xl:px-52">
+          Ferndale Community Radio, FCR for short, is an online based community
+          radio station operating out of the Ferndale Community Hub. FCR
+          provides information and entertainment to the local communities in and
+          around Plymouth, while also being open to the UK and other countries
+          around the world. We are now on air 24 hours a day, 7 days a week.{" "}
+        </p>
       </div>
+
       <div className="mt-6 grid grid-cols-3 grid-rows-2 justify-items-center 2xl:px-52">
         <img
           className="w-[80%] xl:w-[40%]  aspect-square object-contain"
