@@ -1,8 +1,5 @@
 import React from "react";
 
-import studio from "../assets/studio.webp";
-import Grid from "./Grid";
-
 const Radiopage = () => {
   return (
     <main className="bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl py-16 px-[10%]">
