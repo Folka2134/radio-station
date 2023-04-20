@@ -12,12 +12,12 @@ const Radiopage = () => {
       {/* <h1 className="text-4xl md:text-4xl text-center font-semibold">
         Ferndale Community Radio - Plymouth, Devon, UK.
       </h1> */}
-      <div className="flex mt-7  w-full">
+      <div className="flex flex-col justify-center items-center mt-7  w-full">
         <img className="w-96 float-right" src={studio} alt="studio" />
         <p className="text-[1rem]">Free Text in the UK 07451223412</p>
       </div>
       <div className="flex flex-col justify-center text-center">
-        <h2 className="my-10">Presenters</h2>
+        <h2 className="mt-10 mb-4">Presenters</h2>
         <Grid />
       </div>
       {/* <NewsList /> */}

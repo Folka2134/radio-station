@@ -1,144 +1,138 @@
-const presenters = [
+export const presenters = [
   {
-    Amanda_Mansfield: {
-      name: "Amanda Mansfield",
-      image: "Amanda_Mansfield.webp",
-    },
-    Andrew_Hill: {
-      name: "Andrew Hill",
-      image: "Andrew_Hill.webp",
-    },
-    Andy_Howard: {
-      name: "Andy Howard",
-      image: "Andy_Howard.webp",
-    },
-    Andy_Valentine: {
-      name: "Andy Valentine",
-      image: "Andy_Valentine.webp",
-    },
-    Anita_Monk: {
-      name: "Anita Monk",
-      image: "Anita_Monk.webp",
-    },
-    "Becky_Lacey-Sawyer": {
-      name: "Becky Lacey-Sawyer",
-      image: "Becky_Lacey-Sawyer.webp",
-    },
-    Billy_Jay: {
-      name: "Billy Jay",
-      image: "Billy_Jay.webp",
-    },
-    Charlotte_Willis: {
-      name: "Charlotte Willis",
-      image: "Charlotte_Willis.webp",
-    },
-    Colin_Davey: {
-      name: "Colin Davey",
-      image: "Colin_Davey.webp",
-    },
-    Craig_Sullivan: {
-      name: "Craig Sullivan",
-      image: "Craig_Sullivan.webp",
-    },
-    David_Lees: {
-      name: "David Lees",
-      image: "David_Lees.webp",
-    },
-    Dinah_Greek: {
-      name: "Dinah Greek",
-      image: "Dinah_Greek.webp",
-    },
-    George_Bond: {
-      name: "George Bond",
-      image: "George_Bond.webp",
-    },
-    Gimpy_Jake: {
-      name: "Gimpy Jake",
-      image: "Gimpy_Jake.webp",
-    },
-    Hilary_Dunlop: {
-      name: "Hilary Dunlop",
-      image: "Hilary_Dunlop.webp",
-    },
-    Jade_Scott: {
-      name: "Jade Scott",
-      image: "Jade_Scott.webp",
-    },
-    Julian_Mildren: {
-      name: "Julian Mildren",
-      image: "Julian_Mildren.webp",
-    },
-    Michael_Tracey: {
-      name: "Michael Tracey",
-      image: "Michael_Tracey.webp",
-    },
-    Mike_Roberts: {
-      name: "Mike Roberts",
-      image: "Mike_Roberts.webp",
-    },
-    Mike_Snook: {
-      name: "Mike Snook",
-      image: "Mike_Snook.webp",
-    },
-    "Mimi-Dorothea_Orme": {
-      name: "Mimi-Dorothea Orme",
-      image: "Mimi-Dorothea_Orme.webp",
-    },
-    Nathassia: {
-      name: "Nathassia",
-      image: "Nathassia.webp",
-    },
-    Nicholas_Mark_Ross: {
-      name: "Nicholas Mark Ross",
-      image: "Nicholas_Mark_Ross.webp",
-    },
-    Nick_Taylor: {
-      name: "Nick Taylor",
-      image: "Nick_Taylor.webp",
-    },
-    Nikki_Nichols: {
-      name: "Nikki Nichols",
-      image: "Nikki_Nichols.webp",
-    },
-    Pete_Rattlebone: {
-      name: "Pete Rattlebone",
-      image: "Pete_Rattlebone.webp",
-    },
-    Phoenix_Walker: {
-      name: "Phoenix Walker",
-      image: "Phoenix_Walker.webp",
-    },
-    "Rick_O'Shay": {
-      name: "Rick O'Shay",
-      image: "Rick_O'Shay.webp",
-    },
-    Roger_Schulz: {
-      name: "Roger Schulz",
-      image: "Roger_Schulz.webp",
-    },
-    Rozanne_Griffith: {
-      name: "Rozanne Griffith",
-      image: "Rozanne_Griffith.webp",
-    },
-    Steve_Medlin: {
-      name: "Steve Medlin",
-      image: "Steve_Medlin.webp",
-    },
-    Tom_Podesta: {
-      name: "Tom Podesta",
-      image: "Tom_Podesta.webp",
-    },
-    Tracey_Ann_Burke: {
-      name: "Tracey Ann Burke",
-      image: "Tracey_Ann_Burke.webp",
-    },
-    "We.Are.Alien": {
-      name: "We.Are.Alien",
-      image: "We.Are.Alien.webp",
-    },
-    wilma_420: {
-      name: "wilma_420",
-      image: "wilma_420.webp",
-    },
+    name: "Amanda Mansfield",
+    image: "/src/assets/presenters/Amanda_Mansfield.webp",
+  },
+  {
+    name: "Andrew Hill",
+    image: "/src/assets/presenters/Andrew_Hill.webp",
+  },
+  {
+    name: "Andy Howard",
+    image: "/src/assets/presenters/Andy_Howard.webp",
+  },
+  {
+    name: "Andy Valentine",
+    image: "/src/assets/presenters/Andy_Valentine.webp",
+  },
+  {
+    name: "Anita Monk",
+    image: "/src/assets/presenters/Anita_Monk.webp",
+  },
+  {
+    name: "Becky Lacey-Sawyer",
+    image: "/src/assets/presenters/Becky_Lacey-Sawyer.webp",
+  },
+  {
+    name: "Billy Jay",
+    image: "/src/assets/presenters/Billy_Jay.webp",
+  },
+  {
+    name: "Charlotte Willis",
+    image: "/src/assets/presenters/Charlotte_Willis.webp",
+  },
+  {
+    name: "Colin Davey",
+    image: "/src/assets/presenters/Colin_Davey.webp",
+  },
+  {
+    name: "Craig Sullivan",
+    image: "/src/assets/presenters/Craig_Sullivan.webp",
+  },
+  {
+    name: "David Lees",
+    image: "/src/assets/presenters/David_Lees.webp",
+  },
+  {
+    name: "Dinah Greek",
+    image: "/src/assets/presenters/Dinah_Greek.webp",
+  },
+  {
+    name: "George Bond",
+    image: "/src/assets/presenters/George_Bond.webp",
+  },
+  {
+    name: "Gimpy Jake",
+    image: "/src/assets/presenters/Gimpy_Jake.webp",
+  },
+  {
+    name: "Hilary Dunlop",
+    image: "/src/assets/presenters/Hilary_Dunlop.webp",
+  },
+  {
+    name: "Jade Scott",
+    image: "/src/assets/presenters/Jade_Scott.webp",
+  },
+  {
+    name: "Julian Mildren",
+    image: "/src/assets/presenters/Julian_Mildren.webp",
+  },
+  {
+    name: "Michael Tracey",
+    image: "/src/assets/presenters/Michael_Tracey.webp",
+  },
+  {
+    name: "Mike Roberts",
+    image: "/src/assets/presenters/Mike_Roberts.webp",
+  },
+  {
+    name: "Mike Snook",
+    image: "/src/assets/presenters/Mike_Snook.webp",
+  },
+  {
+    name: "Mimi-Dorothea Orme",
+    image: "/src/assets/presenters/Mimi_Dorothea_Orme.webp",
+  },
+  {
+    name: "Nathassia",
+    image: "/src/assets/presenters/Nathassia.webp",
+  },
+  {
+    name: "Nicholas Mark Ross",
+    image: "/src/assets/presenters/Nicholas_Mark_Ross.webp",
+  },
+  {
+    name: "Nick Taylor",
+    image: "/src/assets/presenters/Nick_Taylor.webp",
+  },
+  {
+    name: "Nikki Nichols",
+    image: "/src/assets/presenters/Nikki_Nichols.webp",
+  },
+  {
+    name: "Pete Rattlebone",
+    image: "/src/assets/presenters/Pete_Rattlebone.webp",
+  },
+  {
+    name: "Phoenix Walker",
+    image: "/src/assets/presenters/Phoenix_Walker.webp",
+  },
+  {
+    name: "Rick O'Shay",
+    image: "/src/assets/presenters/Rick_OShay.webp",
+  },
+  {
+    name: "Roger Schulz",
+    image: "/src/assets/presenters/Roger_Schulz.webp",
+  },
+  {
+    name: "Rozanne Griffith",
+    image: "/src/assets/presenters/Rozanne_Griffith.webp",
+  },
+  {
+    name: "Steve Medlin",
+    image: "/src/assets/presenters/Steve_Medlin.webp",
+  },
+  {
+    name: "Tom Podesta",
+    image: "/src/assets/presenters/Tom_Podesta.webp",
+  },
+  {
+    name: "Tracey Ann Burke",
+    image: "/src/assets/presenters/Tracey_Ann_Burke.webp",
+  },
+  {
+    name: "We.Are.Alien",
+    image: "/src/assets/presenters/We_Are_Alien.webp",
   },
 ];
