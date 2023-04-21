@@ -29,11 +29,11 @@ function App() {
   const [route, setRoute] = useState("home");
 
   return (
-    <div className="App bg-[url('./assets/plymouth.webp')] bg-fixed bg-cover min-h-screen relative min-w-[350px]">
+    <div className="App bg-[#0E0E0E] bg-fixed bg-cover min-h-screen relative min-w-[350px]">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div>
       <div className="z-10 relative">
         {/* NAV */}
-        <nav className="flex sticky top-0 w-full justify-end md:justify-between md:bg-[#0E103A] md:bg-opacity-90 text-gray-300  border-[#1D00CB] border-2 border-opacity-40 rounded-b-lg mb-1">
+        <nav className="flex sticky top-0 w-full justify-end md:justify-between md:bg-[#1D1D1D] md:bg-opacity-90 text-gray-300  border-opacity-40 rounded-b-lg mb-1">
           <ul className="hidden md:flex">
             <button
               className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-l-lg"
@@ -75,13 +75,13 @@ function App() {
               alt="logo"
             />
           </div>
-          <div className="hidden md:block max-h-96 h-52 bg-black bg-opacity-80 text-white w-full rounded-3xl p-3">
+          <div className="hidden md:block max-h-96 h-52 bg-[#242424] bg-opacity-80 text-white w-full rounded-3xl p-3">
             banner
           </div>
         </header>
         <div className="sticky top-16">
           {/* PLAYER */}
-          <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 flex h-32 bg-black bg-opacity-90 rounded-xl mb-1 text-white border-2 border-black border-opacity-50 p-2">
+          <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 flex h-32 bg-[#242424] bg-opacity-90 rounded-xl mb-1 text-white border-2 border-black border-opacity-50 p-2">
             <div className="h-full w-full">
               <div>currently playing</div>
               <button>listen live ^^</button>
@@ -95,7 +95,7 @@ function App() {
         {renderSwitch(route)}
         {/* ADVERTS */}
         <section className="hidden bg-black lg:absolute right-0">test</section>
-        <footer className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 bg-black bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40">
+        <footer className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 bg-[#1D1D1D] bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40">
           <div className="flex justify-between pl-5 pr-0 py-2 ">
             <div className="flex flex-col justify-center items-center">
               <div className="flex items-center bg-white rounded-full p-1">
