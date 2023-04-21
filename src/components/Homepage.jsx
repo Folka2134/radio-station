@@ -8,7 +8,7 @@ import qrcode from "../assets/qrcode.webp";
 
 const Homepage = () => {
   return (
-    <main className="bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6">
+    <main className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6">
       <h1 className="text-5xl md:text-6xl text-center font-semibold">
         Ferndale Community Radio Plymouth
       </h1>

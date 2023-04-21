@@ -6,7 +6,7 @@ import Carousel from "./Carousel";
 
 const Radiopage = () => {
   return (
-    <main className="bg-[#1A3175] bg-black bg-opacity-20 shadow-2xl text-white text-2xl px-[10%] w-full">
+    <main className="bg-[#1A3175] bg-black bg-opacity-0 shadow-2xl text-white text-2xl px-[10%] w-full">
       <h1 className="text-3xl md:text-3xl text-center font-semibold pt-12 pb-5">
         Studio Number One
       </h1>
