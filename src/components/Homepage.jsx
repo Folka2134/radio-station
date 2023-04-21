@@ -19,7 +19,7 @@ const Homepage = () => {
         <p className="text-[1rem]">
           Based in the port city of Plymouth - Devon - UK.
         </p>
-        <p className="text-[1rem] px-6 lg:px-52 2xl:px-96">
+        <p className="text-[1rem] px-6 3xl:px-24 4xl:px-52 5xl:px-[30rem]">
           Ferndale Community Radio, FCR for short, is an online based community
           radio station operating out of the Ferndale Community Hub. FCR
           provides information and entertainment to the local communities in and

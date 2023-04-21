@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App bg-[url('./assets/plymouth.webp')] bg-fixed bg-cover min-h-screen relative min-w-[350px]">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div>
-      <div className="mx-6 z-10 relative">
+      <div className="mx-6 lg:mx-72 z-10 relative">
         <header className=" flex flex-col md:flex-row justify-center md:justify-between items-center pt-3 mb-3">
           <div className="flex justify-center md:mr-5 mb-2">
             <img
