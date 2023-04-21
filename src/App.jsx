@@ -32,7 +32,7 @@ function App() {
     <div className="App bg-[#0E0E0E] bg-fixed bg-cover min-h-screen relative min-w-[350px]">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div>
       {/* NAV */}
-      <nav className="flex sticky top-0 w-full justify-end md:justify-between md:bg-[#1D1D1D] md:bg-opacity-90 text-gray-300  border-opacity-40 rounded-b-lg mb-1">
+      <nav className="flex sticky top-0 w-full justify-end md:justify-between md:bg-[#1D1D1D] md:bg-opacity-90 text-gray-300  border-opacity-40 rounded-b-lg mb-1 z-20">
         <ul className="hidden md:flex">
           <button
             className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-l-lg"
