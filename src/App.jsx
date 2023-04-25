@@ -29,81 +29,77 @@ function App() {
   const [route, setRoute] = useState("home");
 
   return (
-    <div className="App bg-[#0E0E0E] bg-fixed bg-cover min-h-screen relative min-w-[350px]">
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div>
-      {/* NAV */}
-      <nav className="px-6 lg:px-12 xl:px-24 2xl:px-44 3xl:px-52 4xl:px-72 5xl:px-96 flex sticky top-0 w-full justify-end md:justify-between md:bg-[#1D1D1D] md:bg-opacity-90 text-gray-300  border-opacity-40 rounded-b-lg mb-1 z-20">
-        <ul className="hidden md:flex">
-          <button
-            className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-l-lg"
-            onClick={() => setRoute("home")}
-          >
-            Home
-          </button>
-          <button
-            className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200"
-            onClick={() => setRoute("radio")}
-          >
-            Radio
-          </button>
-          {/* <button
+    <div className="App ">
+      {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div> */}
+      <div className="bg-[#0E1012] bg-fixed bg-cover min-h-screen relative flex flex-col items-center ">
+        {/* NAV */}
+        <nav className="flex sticky top-0 w-full justify-end md:justify-center  md:bg-opacity-90 text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
+          <ul className="hidden md:flex">
+            <button
+              className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
+              onClick={() => setRoute("home")}
+            >
+              Home
+            </button>
+            <button
+              className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
+              onClick={() => setRoute("radio")}
+            >
+              Radio
+            </button>
+            {/* <button
                 className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200"
                 onClick={() => setRoute("news")}
               >
                 News
               </button> */}
-          <button
-            className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200"
-            onClick={() => setRoute("contact")}
-          >
-            Contact
-          </button>
-        </ul>
-        <div className="block md:hidden w-full bg-black bg-opacity-70  p-1 border-2 border-black border-opacity-50">
-          <RxHamburgerMenu size={50} color="white" />
-        </div>
-      </nav>
-      <section className="advertisement 2xl:flex flex-col just bg-black w-96 2xl:w-40 3xl:w-48 4xl:w-60 5xl:w-80 absolute hidden bottom-0 2xl:top-28 2xl:right-0 rounded-lg h-min">
-        <div className="border-white border-2 text-white ">Advert</div>
-        <div className="border-white border-2 text-white ">Advert</div>
-        <div className="border-white border-2 text-white ">Advert</div>
-        <div className="border-white border-2 text-white ">Advert</div>
-        <div className="border-white border-2 text-white ">Advert</div>
-      </section>
-      <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-96 z-10 relative">
-        <header className=" flex flex-col md:flex-row justify-center md:justify-between items-center pt-3 mb-3">
-          <div className="flex justify-center md:mr-5 mb-2">
-            <img
-              className="max-h-72 md:h-full rounded-full"
-              src={logo}
-              alt="logo"
-            />
+            <button
+              className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
+              onClick={() => setRoute("contact")}
+            >
+              Contact
+            </button>
+          </ul>
+          <div className="block md:hidden w-full p-4">
+            <RxHamburgerMenu size={50} color="white" />
           </div>
-          <div className="hidden md:block max-h-96 h-52 bg-[#242424] bg-opacity-80 text-white w-full rounded-3xl p-3">
-            banner
-          </div>
-        </header>
-        <div className="sticky top-16">
-          {/* PLAYER */}
-          {/* <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 flex h-32 bg-[#242424] bg-opacity-90 rounded-xl mb-1 text-white border-2 border-black border-opacity-50 p-2">
-            <div className="h-full w-full">
-              <div>currently playing</div>
-              <button>listen live ^^</button>
+        </nav>
+        {/* <section className="advertisement 2xl:flex flex-col just bg-black w-96 2xl:w-40 3xl:w-48 4xl:w-60 5xl:w-80 absolute hidden bottom-0 2xl:top-28 2xl:right-0 rounded-lg h-min">
+          <div className="border-white border-2 text-white ">Advert</div>
+          <div className="border-white border-2 text-white ">Advert</div>
+          <div className="border-white border-2 text-white ">Advert</div>
+          <div className="border-white border-2 text-white ">Advert</div>
+          <div className="border-white border-2 text-white ">Advert</div>
+        </section> */}
+        <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-96 z-10 relative">
+          <header className=" flex flex-col md:flex-row justify-center md:justify-between items-center pt-3 mb-3">
+            <div className="flex justify-center md:mr-5 mb-2">
+              <img
+                className="max-h-80 md:h-full rounded-full"
+                src={logo}
+                alt="logo"
+              />
             </div>
-            <div className="h-full w-full">
-              <h2>Request a song!</h2>
+            <div className="hidden md:block max-h-96 h-52 bg-[#242424] bg-opacity-80 text-white w-full rounded-3xl p-3">
+              banner
+            </div>
+          </header>
+          {/* <div className="sticky top-16">
+            PLAYER
+            <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 flex h-32 bg-[#242424] bg-opacity-90 rounded-xl mb-1 text-white border-2 border-black border-opacity-50 p-2">
+              <div className="h-full w-full">
+                <div>currently playing</div>
+                <button>listen live ^^</button>
+              </div>
+              <div className="h-full w-full">
+                <h2>Request a song!</h2>
+              </div>
             </div>
           </div> */}
+          {/* Render Main */}
+          <div className="flex flex-col">{renderSwitch(route)}</div>
         </div>
-        {/* Render Main */}
-        <div className="flex flex-col md:flex-row">
-          {renderSwitch(route)}
-          {/* ADVERTS */}
-        </div>
-        <div className="w-full  bg-opacity-60  text-white text-2xl p-6 rounded-t-xl">
-          test
-        </div>
-        <footer className=" bg-[#1D1D1D] bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40">
+        <footer className=" bg-[#1D1D1D] bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40 w-full">
           <div className="flex justify-between pl-5 pr-0 py-2 ">
             <div className="flex flex-col justify-center items-center">
               <div className="flex items-center bg-white rounded-full p-1">
