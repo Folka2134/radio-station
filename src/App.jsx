@@ -33,7 +33,7 @@ function App() {
       {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div> */}
       <div className="bg-[#0E1012] bg-fixed bg-cover min-h-screen relative flex flex-col items-center ">
         {/* NAV */}
-        <nav className="flex sticky top-0 w-full justify-end md:justify-center bg-black bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
+        <nav className="flex sticky top-0 w-full justify-end md:justify-center bg-[#0E1012] bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
           <ul className="hidden md:flex">
             <button
               className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
@@ -80,7 +80,7 @@ function App() {
                 alt="logo"
               />
             </div>
-            <div className="hidden lg:block h-[300px] lg:h-[350px] 2xl:h-[400px] bg-[#242424] bg-opacity-80 text-white w-2/3 rounded-3xl bg-[url('./assets/plymouth.webp')] bg-cover bg-top "></div>
+            <div className="hidden lg:block h-[250px] 2xl:h-[300px] 5xl:h-[350px] bg-[#242424] bg-opacity-80 text-white w-2/3 rounded-3xl bg-[url('./assets/plymouth.webp')] bg-cover bg-top "></div>
           </header>
           {/* <div className="sticky top-16">
             PLAYER
