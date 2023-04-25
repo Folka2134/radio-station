@@ -33,7 +33,7 @@ function App() {
       {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div> */}
       <div className="bg-[#0E1012] bg-fixed bg-cover min-h-screen relative flex flex-col items-center ">
         {/* NAV */}
-        <nav className="flex sticky top-0 w-full justify-end md:justify-center  md:bg-opacity-90 text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
+        <nav className="flex sticky top-0 w-full justify-end md:justify-center bg-black bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
           <ul className="hidden md:flex">
             <button
               className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
@@ -73,16 +73,14 @@ function App() {
         </section> */}
         <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-96 z-10 relative">
           <header className=" flex flex-col md:flex-row justify-center md:justify-between items-center pt-3 mb-3">
-            <div className="flex justify-center md:mr-5 mb-2">
+            <div className="flex justify-center md:mr-5 mb-2 w-full lg:w-1/3">
               <img
                 className="max-h-80 md:h-full rounded-full"
                 src={logo}
                 alt="logo"
               />
             </div>
-            <div className="hidden md:block max-h-96 h-52 bg-[#242424] bg-opacity-80 text-white w-full rounded-3xl p-3">
-              banner
-            </div>
+            <div className="hidden lg:block h-[300px] lg:h-[350px] 2xl:h-[400px] bg-[#242424] bg-opacity-80 text-white w-2/3 rounded-3xl bg-[url('./assets/plymouth.webp')] bg-cover bg-top "></div>
           </header>
           {/* <div className="sticky top-16">
             PLAYER
