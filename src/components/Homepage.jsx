@@ -9,13 +9,13 @@ import qrcode from "../assets/qrcode.webp";
 const Homepage = () => {
   return (
     <main className="container flex flex-col justify-center items-center text-center">
-      <h1 className="text-5xl my-6 font-semibold text-white max-w-[464px]">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl my-6 font-semibold text-white max-w-[656px]">
         Ferndale Community Radio Plymouth
       </h1>
-      <h2 className="text-lg text-white">
+      <h2 className="text-lg text-white text-opacity-80">
         'The very best internet radio station from FCTG'
       </h2>
-      <p className="text-[1rem] text-white">
+      <p className="text-[1rem] text-white text-opacity-80">
         Based in the port city of Plymouth - Devon - UK.
       </p>
       <div className="w-full text-white p-6 rounded-t-xl">
