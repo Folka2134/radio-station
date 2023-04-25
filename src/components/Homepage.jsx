@@ -8,27 +8,18 @@ import qrcode from "../assets/qrcode.webp";
 
 const Homepage = () => {
   return (
-    <main className=" ">
+    <main className="container flex flex-col justify-center items-center text-center">
+      <h1 className="text-5xl my-6 font-semibold text-white max-w-[464px]">
+        Ferndale Community Radio Plymouth
+      </h1>
+      <h2 className="text-lg text-white">
+        'The very best internet radio station from FCTG'
+      </h2>
+      <p className="text-[1rem] text-white">
+        Based in the port city of Plymouth - Devon - UK.
+      </p>
       <div className="w-full bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6 rounded-t-xl">
-        <h1 className="text-5xl my-6 text-center font-semibold">
-          Ferndale Community Radio Plymouth
-        </h1>
-        <div className="mt-2 text-center">
-          <h2 className="text-lg">
-            'The very best internet radio station from FCTG'
-          </h2>
-          <p className="text-[1rem]">
-            Based in the port city of Plymouth - Devon - UK.
-          </p>
-          <p className="text-[1rem] px-6 3xl:px-24 4xl:px-52 5xl:px-[30rem]">
-            Ferndale Community Radio, FCR for short, is an online based
-            community radio station operating out of the Ferndale Community Hub.
-            FCR provides information and entertainment to the local communities
-            in and around Plymouth, while also being open to the UK and other
-            countries around the world. We are now on air 24 hours a day, 7 days
-            a week.{" "}
-          </p>
-        </div>
+        <div className="mt-2 text-center"></div>
 
         <div className="mt-6 grid grid-cols-3 grid-rows-2 justify-items-center 2xl:px-52">
           <img
