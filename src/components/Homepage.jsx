@@ -18,37 +18,35 @@ const Homepage = () => {
       <p className="text-[1rem] text-white">
         Based in the port city of Plymouth - Devon - UK.
       </p>
-      <div className="w-full bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6 rounded-t-xl">
-        <div className="mt-2 text-center"></div>
-
-        <div className="mt-6 grid grid-cols-3 grid-rows-2 justify-items-center 2xl:px-52">
+      <div className="w-full text-white p-6 rounded-t-xl">
+        <div className="mt-6 grid grid-cols-2 md:grid-cols-3  gap-2 justify-items-center 2xl:px-52">
           <img
-            className="w-[80%] xl:w-[40%]  aspect-square object-contain"
+            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain"
             src={lottery}
             alt="lottery"
           />
           <img
-            className="w-[80%] xl:w-[40%] aspect-square object-contain"
+            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
             src={radioAcademy}
             alt="radioAcademy"
           />
           <img
-            className="w-[80%] xl:w-[40%] aspect-square object-contain "
-            src={pafc}
-            alt="pafc"
-          />
-          <img
-            className="w-[80%] xl:w-[40%] aspect-square object-contain"
+            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
             src={fund}
             alt="fund"
           />
           <img
-            className="w-[80%] xl:w-[40%] aspect-square object-contain"
+            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
+            src={pafc}
+            alt="pafc"
+          />
+          <img
+            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
             src={clarion}
             alt="clarion"
           />
           <img
-            className="w-[80%] xl:w-[40%] aspect-square object-contain"
+            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
             src={qrcode}
             alt="qrcode"
           />
