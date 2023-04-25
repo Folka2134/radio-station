@@ -59,10 +59,17 @@ function App() {
             Contact
           </button>
         </ul>
-        <div className="block md:hidden w-full  bg-black bg-opacity-70  p-1 border-2 border-black border-opacity-50">
+        <div className="block md:hidden w-full bg-black bg-opacity-70  p-1 border-2 border-black border-opacity-50">
           <RxHamburgerMenu size={50} color="white" />
         </div>
       </nav>
+      <section className="advertisement 2xl:flex flex-col just bg-black w-96 2xl:w-40 3xl:w-48 4xl:w-60 5xl:w-80 absolute hidden bottom-0 2xl:top-28 2xl:right-0 rounded-lg h-min">
+        <div className="border-white border-2 text-white ">Advert</div>
+        <div className="border-white border-2 text-white ">Advert</div>
+        <div className="border-white border-2 text-white ">Advert</div>
+        <div className="border-white border-2 text-white ">Advert</div>
+        <div className="border-white border-2 text-white ">Advert</div>
+      </section>
       <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-96 z-10 relative">
         <header className=" flex flex-col md:flex-row justify-center md:justify-between items-center pt-3 mb-3">
           <div className="flex justify-center md:mr-5 mb-2">
@@ -92,7 +99,9 @@ function App() {
         <div className="flex flex-col md:flex-row">
           {renderSwitch(route)}
           {/* ADVERTS */}
-          <section className="bg-black w-1/3">test</section>
+        </div>
+        <div className="w-full  bg-opacity-60  text-white text-2xl p-6 rounded-t-xl">
+          test
         </div>
         <footer className=" bg-[#1D1D1D] bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40">
           <div className="flex justify-between pl-5 pr-0 py-2 ">
