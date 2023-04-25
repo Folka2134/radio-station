@@ -32,7 +32,7 @@ function App() {
     <div className="App bg-[#0E0E0E] bg-fixed bg-cover min-h-screen relative min-w-[350px]">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div>
       {/* NAV */}
-      <nav className="flex sticky top-0 w-full justify-end md:justify-between md:bg-[#1D1D1D] md:bg-opacity-90 text-gray-300  border-opacity-40 rounded-b-lg mb-1 z-20">
+      <nav className="px-6 lg:px-12 xl:px-24 2xl:px-44 3xl:px-52 4xl:px-72 5xl:px-96 flex sticky top-0 w-full justify-end md:justify-between md:bg-[#1D1D1D] md:bg-opacity-90 text-gray-300  border-opacity-40 rounded-b-lg mb-1 z-20">
         <ul className="hidden md:flex">
           <button
             className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200 rounded-l-lg"
@@ -58,9 +58,6 @@ function App() {
           >
             Contact
           </button>
-          <li className="text-xl p-5 cursor-pointer hover:text-white active:bg-white active:text-black transition-all duration-200">
-            Schedule
-          </li>
         </ul>
         <div className="block md:hidden w-full  bg-black bg-opacity-70  p-1 border-2 border-black border-opacity-50">
           <RxHamburgerMenu size={50} color="white" />
@@ -81,7 +78,7 @@ function App() {
         </header>
         <div className="sticky top-16">
           {/* PLAYER */}
-          <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 flex h-32 bg-[#242424] bg-opacity-90 rounded-xl mb-1 text-white border-2 border-black border-opacity-50 p-2">
+          {/* <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-60 flex h-32 bg-[#242424] bg-opacity-90 rounded-xl mb-1 text-white border-2 border-black border-opacity-50 p-2">
             <div className="h-full w-full">
               <div>currently playing</div>
               <button>listen live ^^</button>
@@ -89,12 +86,14 @@ function App() {
             <div className="h-full w-full">
               <h2>Request a song!</h2>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* Render Main */}
-        {renderSwitch(route)}
-        {/* ADVERTS */}
-        <section className="hidden bg-black lg:absolute right-0">test</section>
+        <div className="flex flex-col md:flex-row">
+          {renderSwitch(route)}
+          {/* ADVERTS */}
+          <section className="bg-black w-1/3">test</section>
+        </div>
         <footer className=" bg-[#1D1D1D] bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40">
           <div className="flex justify-between pl-5 pr-0 py-2 ">
             <div className="flex flex-col justify-center items-center">

@@ -6,15 +6,15 @@ import Carousel from "./Carousel";
 
 const Radiopage = () => {
   return (
-    <main className=" bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6 rounded-t-xl">
+    <main className="w-full bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6 rounded-t-xl">
       <div>
-        <h1 className="text-3xl md:text-3xl text-center font-semibold pt-12 pb-5">
+        <h1 className="text-3xl md:text-3xl text-left font-semibold my-6">
           Studio Number One
         </h1>
         {/* <h1 className="text-4xl md:text-4xl text-center font-semibold">
         Ferndale Community Radio - Plymouth, Devon, UK.
       </h1> */}
-        <div className="flex flex-col md:flex-row justify-center items-center my-6">
+        <div className="flex flex-col md:flex-row items-center my-6">
           <img
             className="w-96 rounded-3xl shadow-xl"
             src={studio}
@@ -27,10 +27,12 @@ const Radiopage = () => {
             <p className="text-xl">Free Text in the UK 07451223412</p>
           </div>
         </div>
-        <div></div>
         <div className="flex flex-col w-full justify-center text-center">
+          <h2>Schedule</h2>
+        </div>
+        <div className="flex flex-col justify-center text-center">
           <h2 className="">Presenters</h2>
-          <Carousel />
+          {/* <Carousel /> */}
         </div>
         {/* <NewsList /> */}
       </div>

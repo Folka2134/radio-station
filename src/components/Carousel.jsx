@@ -30,7 +30,7 @@ const Carousel = () => {
               className="item h-[14rem] min-w-[10rem] py-8 px-2"
             >
               <img
-                className="w-full h-full border-2 border-black pointer-events-none rounded-xl"
+                className="w-full h-full border-2 border-black pointer-events-none rounded-xl object-cover object-top"
                 src={presenter.image}
                 alt="presenter"
               />
