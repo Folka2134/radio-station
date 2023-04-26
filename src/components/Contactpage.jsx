@@ -2,7 +2,7 @@ import React from "react";
 
 const Radiopage = () => {
   return (
-    <main className=" bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6 rounded-t-xl">
+    <main className=" bg-[#1A3175] bg-opacity-60 border-2 border-black border-opacity-40 text-white text-2xl p-6 rounded-t-xl fadeInFast">
       <h1 className="text-4xl md:text-4xl text-center font-semibold">
         Get in touch
       </h1>

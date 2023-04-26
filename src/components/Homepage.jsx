@@ -20,7 +20,7 @@ const Homepage = () => {
   getWeatherData();
 
   return (
-    <main className="myContainer flex flex-col justify-center items-center text-center">
+    <main className="myContainer flex flex-col justify-center items-center text-center fadeInFast">
       <h1 className="text-4xl md:text-5xl lg:text-5xl 5xl:text-6xl my-6 font-semibold text-black dark:text-white max-w-[656px] lg:mt-12 5xl:mt-20">
         Ferndale Community Radio Plymouth
       </h1>
