@@ -12,6 +12,7 @@ export default {
         "5xl": { raw: "(min-width: 2000px)" },
         // => @media (min-height: 800px) { ... }
       },
+      darkMode: "class",
     },
   },
   plugins: [],

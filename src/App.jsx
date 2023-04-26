@@ -34,6 +34,9 @@ function renderSwitch(param) {
 }
 
 function App() {
+  // const [darkMode, setDarkMode] = useState(
+  //   JSON.parse(localStorage.getItem("darkMode")) || false
+  // );
   const [route, setRoute] = useState("home");
   const [loading, setLoading] = useState(false);
 
@@ -41,17 +44,27 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 0);
   }, []);
 
+  // if (
+  //   localStorage.theme === "dark" ||
+  //   (!("theme" in localStorage) &&
+  //     window.matchMedia("(prefers-color-scheme: dark)").matches)
+  // ) {
+  //   document.documentElement.classList.add("dark");
+  // } else {
+  //   document.documentElement.classList.remove("dark");
+  // }
+
   return (
-    <div className="App bg-[#0E1012] min-h-screen flex justify-center items-center">
+    <div className="App bg-white dark:bg-[#0E1012] min-h-screen flex justify-center items-center">
       {loading ? (
         <ClipLoader color={"#36d7b7"} loading={loading} size={50} />
       ) : (
-        <div className="flex flex-col bg-[#0E1012] min-h-screen relative fadeIn">
+        <div className="flex flex-col bg-[#fff] min-h-screen relative fadeIn">
           {/* NAV */}
-          <nav className="flex sticky top-0 w-full justify-end md:justify-center bg-[#0E1012] bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
+          <nav className="flex sticky top-0 w-full  md:justify-center bg-[#0E1012] bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
             <ul className="hidden md:flex">
               <button
                 className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
@@ -81,6 +94,7 @@ function App() {
             <div className="block md:hidden w-full p-4">
               <RxHamburgerMenu size={50} color="white" />
             </div>
+            <div>DARKMODE</div>
           </nav>
           {/* <section className="advertisement 2xl:flex flex-col w-96 2xl:w-40 3xl:w-48 4xl:w-60 5xl:w-80 absolute hidden bottom-0 2xl:top-28 2xl:right-0 rounded-lg h-min">
           <div className="border-white border-2 text-white ">Advert</div>
