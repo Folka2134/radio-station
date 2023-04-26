@@ -79,15 +79,14 @@ function App() {
           <div className="border-white border-2 text-white ">Advert</div>
         </section> */}
         <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-96 z-10 relative">
-          <header className="flex flex-col md:flex-row justify-center md:justify-between items-center pt-3 mb-3">
-            <div className="flex justify-center md:mr-5 mb-2 w-full lg:w-1/3">
+          <header className="flex flex-col md:flex-row justify-center pt-3 mb-3">
+            <div className="flex justify-center md:mr-5 mb-2 w-full">
               <img
-                className="max-h-80 md:h-full rounded-full"
+                className="max-h-60 md:h-full rounded-full float-right"
                 src={logo}
                 alt="logo"
               />
             </div>
-            <div className="hidden lg:block h-[250px] 2xl:h-[300px] 5xl:h-[350px] bg-[#242424] bg-opacity-80 text-white w-2/3 rounded-3xl bg-[url('./assets/plymouth.webp')] bg-cover bg-top"></div>
           </header>
           <div className="sticky top-16">
             {/* PLAYER */}
