@@ -2,8 +2,8 @@ import React from "react";
 
 const Homepage = () => {
   return (
-    <main className="myContainer  flex flex-col justify-center items-center text-center">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl my-6 font-semibold text-white max-w-[656px] lg:mt-12 xl:mt-24">
+    <main className="myContainer flex flex-col justify-center items-center text-center">
+      <h1 className="text-4xl md:text-5xl lg:text-5xl 5xl:text-6xl my-6 font-semibold text-white max-w-[656px] lg:mt-12 xl:mt-24">
         Ferndale Community Radio Plymouth
       </h1>
       <h2 className="text-lg text-white text-opacity-80">

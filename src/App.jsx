@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App ">
       {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div> */}
-      <div className="flex flex-col bg-[#0E1012] min-h-screen relative justify-between">
+      <div className="flex flex-col bg-[#0E1012] min-h-screen relative">
         {/* NAV */}
         <nav className="flex sticky top-0 w-full justify-end md:justify-center bg-[#0E1012] bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
           <ul className="hidden md:flex">
@@ -103,7 +103,7 @@ function App() {
           </div>
           <div className="flex flex-col mb-10">{renderSwitch(route)}</div>
         </div>
-        <footer className="flex flex-col md:flex-row justify-center items-center xl:px-5 pr-0 py-4 bg-[#1D1D1D] bg-opacity-70 rounded-b-xl text-gray-300 border-2 border-black border-opacity-40 w-full h-min self-end">
+        <footer className="flex flex-col md:flex-row justify-center items-center py-4 bg-[#1D1D1D] text-gray-300 mt-auto">
           <div className="flex flex-col justify-center items-center">
             <div className="flex items-center bg-white rounded-full p-1">
               <BsFacebook
