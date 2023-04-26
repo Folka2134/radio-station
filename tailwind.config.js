@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
@@ -12,7 +13,6 @@ export default {
         "5xl": { raw: "(min-width: 2000px)" },
         // => @media (min-height: 800px) { ... }
       },
-      darkMode: "class",
     },
   },
   plugins: [],

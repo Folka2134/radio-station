@@ -1,24 +1,26 @@
 import React, { useState, useEffect } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 
+import NewsList from "./components/NewsList";
+import Homepage from "./components/Homepage";
+import Radiopage from "./components/Radiopage";
+import Contactpage from "./components/Contactpage";
+
+import { BsFacebook, BsTwitter } from "react-icons/bs";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { BsFillMoonFill } from "react-icons/bs";
+import { BsFillSunFill } from "react-icons/bs";
+
 import "./App.css";
+
 import logo from "./assets/fcrlive.webp";
 import logoGofundme from "./assets/gofundme-blog-image.webp";
-import background from "./assets/plymouth.webp";
-
 import lottery from "./assets/lottery.webp";
 import radioAcademy from "./assets/radio_academy.webp";
 import pafc from "./assets/pafc.webp";
 import fund from "./assets/fund.webp";
 import clarion from "./assets/clarion.webp";
 import qrcode from "./assets/qrcode.webp";
-
-import { BsFacebook, BsTwitter } from "react-icons/bs";
-import { RxHamburgerMenu } from "react-icons/rx";
-import NewsList from "./components/NewsList";
-import Homepage from "./components/Homepage";
-import Radiopage from "./components/Radiopage";
-import Contactpage from "./components/Contactpage";
 
 function renderSwitch(param) {
   switch (param) {
@@ -34,9 +36,7 @@ function renderSwitch(param) {
 }
 
 function App() {
-  // const [darkMode, setDarkMode] = useState(
-  //   JSON.parse(localStorage.getItem("darkMode")) || false
-  // );
+  const [theme, setTheme] = useState("light");
   const [route, setRoute] = useState("home");
   const [loading, setLoading] = useState(false);
 
@@ -47,25 +47,37 @@ function App() {
     }, 0);
   }, []);
 
-  // if (
-  //   localStorage.theme === "dark" ||
-  //   (!("theme" in localStorage) &&
-  //     window.matchMedia("(prefers-color-scheme: dark)").matches)
-  // ) {
-  //   document.documentElement.classList.add("dark");
-  // } else {
-  //   document.documentElement.classList.remove("dark");
-  // }
+  // useEffect(() => {
+  //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  //     setTheme("dark");
+  //   } else {
+  //     setTheme("light");
+  //   }
+  // }, []);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+    console.log(theme);
+  };
 
   return (
     <div className="App bg-white dark:bg-[#0E1012] min-h-screen flex justify-center items-center">
       {loading ? (
         <ClipLoader color={"#36d7b7"} loading={loading} size={50} />
       ) : (
-        <div className="flex flex-col bg-[#fff] min-h-screen relative fadeIn">
+        <div className="flex flex-col bg-white dark:bg-[#0E1012] min-h-screen relative fadeIn">
           {/* NAV */}
-          <nav className="flex sticky top-0 w-full  md:justify-center bg-[#0E1012] bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
-            <ul className="hidden md:flex">
+          <nav className="flex sticky  top-0 w-full  md:justify-center bg-white dark:bg-[#0E1012] bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-black dark:text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
+            {/* <div></div> */}
+            <ul className="hidden md:flex ">
               <button
                 className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
                 onClick={() => setRoute("home")}
@@ -92,9 +104,21 @@ function App() {
               </button>
             </ul>
             <div className="block md:hidden w-full p-4">
-              <RxHamburgerMenu size={50} color="white" />
+              <RxHamburgerMenu
+                size={50}
+                color={theme === "dark" ? "white" : "black"}
+              />
             </div>
-            <div>DARKMODE</div>
+            <button
+              className="absolute right-0 p-6 "
+              onClick={handleThemeSwitch}
+            >
+              {theme === "dark" ? (
+                <BsFillSunFill size={25} className="fadeInFast" />
+              ) : (
+                <BsFillMoonFill size={25} className="fadeInFast" />
+              )}
+            </button>
           </nav>
           {/* <section className="advertisement 2xl:flex flex-col w-96 2xl:w-40 3xl:w-48 4xl:w-60 5xl:w-80 absolute hidden bottom-0 2xl:top-28 2xl:right-0 rounded-lg h-min">
           <div className="border-white border-2 text-white ">Advert</div>
