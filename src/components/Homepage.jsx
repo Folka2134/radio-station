@@ -1,10 +1,4 @@
 import React from "react";
-import lottery from "../assets/lottery.webp";
-import radioAcademy from "../assets/radio_academy.webp";
-import pafc from "../assets/pafc.webp";
-import fund from "../assets/fund.webp";
-import clarion from "../assets/clarion.webp";
-import qrcode from "../assets/qrcode.webp";
 
 const Homepage = () => {
   return (
@@ -18,41 +12,7 @@ const Homepage = () => {
       <p className="text-[1rem] text-white text-opacity-80">
         Based in the port city of Plymouth - Devon - UK.
       </p>
-      <div className="w-full text-white p-6 rounded-t-xl xl:my-10 2xl:my-24">
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-2 justify-items-center 2xl:px-52">
-          <img
-            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain"
-            src={lottery}
-            alt="lottery"
-          />
-          <img
-            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
-            src={radioAcademy}
-            alt="radioAcademy"
-          />
-          <img
-            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
-            src={fund}
-            alt="fund"
-          />
-          <img
-            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
-            src={pafc}
-            alt="pafc"
-          />
-          <img
-            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
-            src={clarion}
-            alt="clarion"
-          />
-          <img
-            className="w-[80%] xl:w-[60%] aspect-[3/2] object-contain mix-blend-color-burn"
-            src={qrcode}
-            alt="qrcode"
-          />
-        </div>
-        <div></div>
-      </div>
+
       {/* <NewsList /> */}
     </main>
   );
