@@ -3,89 +3,68 @@ import React, { useEffect, useState } from "react";
 const Weather = () => {
   const [weatherData, setWeatherData] = useState("");
 
-  const API_KEY = "f6b39355d32df8d5b4bb9916251c1611";
+  const API_KEY = "8a32bc17bfde477e8d8175552211011";
 
   async function getWeatherData() {
-    await navigator.geolocation.getCurrentPosition((success) => {
-      let { latitude, longitude } = success.coords;
-      // console.log(latitude, longitude);
-      fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=50.3755&lon=-4.1427&exclude=hourly,minutely&units=metric&appid=${API_KEY}`
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-          setWeatherData(data);
-        });
-    });
+    // navigator.geolocation.getCurrentPosition((success) => {
+    //   let { latitude, longitude } = success.coords;
+    // console.log(latitude, longitude);
+    const res = await fetch(
+      `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=Plymouth&days=3&aqi=no&alerts=no`
+    );
+    try {
+      const data = await res.json();
+      setWeatherData(data);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   useEffect(() => {
     getWeatherData();
   }, []);
 
+  const today = new Date();
+
+  // console.log(weatherData.forecast.forecastday);
+
   return (
     <div className="p-4 z-0 w-full">
       <div className="text-white">
         <div className="future-forecast flex  text-white justify-center items-center relative">
           <div className="absolute top-0 left-0">
-            <h4 className="">{weatherData.name}</h4>
+            <h4 className="">{weatherData && weatherData.location.name}</h4>
           </div>
 
           <div
             className="weather-forecast grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-row mt-5"
             id="weather-forecast"
           >
-            <div className="weather-forecast-item flex flex-col items-center justify-center m-4">
-              <div className="day bg-[#3C3C44] rounded-lg text-center">Tue</div>
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt="weather icon"
-                className="w-icon"
-              />
-              <div className="temp font-semibold">Night - 25.6&#176;</div>
-              <div className="temp font-semibold">Day - 35.6&#176;</div>
-            </div>
-            <div className="weather-forecast-item flex flex-col items-center justify-center m-4">
-              <div className="day">Wed</div>
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt="weather icon"
-                className="w-icon"
-              />
-              <div className="temp font-semibold">Night - 25.6&#176;</div>
-              <div className="temp font-semibold">Day - 35.6&#176;</div>
-            </div>
-            <div className="weather-forecast-item flex flex-col items-center justify-center m-4">
-              <div className="day">Thur</div>
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt="weather icon"
-                className="w-icon"
-              />
-              <div className="temp font-semibold">Night - 25.6&#176;</div>
-              <div className="temp font-semibold">Day - 35.6&#176;</div>
-            </div>
-            <div className="weather-forecast-item flex flex-col items-center justify-center m-4">
-              <div className="day">Fri</div>
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt="weather icon"
-                className="w-icon"
-              />
-              <div className="temp font-semibold">Night - 25.6&#176;</div>
-              <div className="temp font-semibold">Day - 35.6&#176;</div>
-            </div>
-            <div className="weather-forecast-item flex flex-col items-center justify-center m-4">
-              <div className="day">Sat</div>
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt="weather icon"
-                className="w-icon"
-              />
-              <div className="temp font-semibold">Night - 25.6&#176;</div>
-              <div className="temp font-semibold">Day - 35.6&#176;</div>
-            </div>
+            {weatherData &&
+              weatherData.forecast.forecastday.map((weather, weatherKey) => (
+                <div
+                  key={weatherKey}
+                  className="weather-forecast-item flex flex-col items-center justify-center m-4 md:w-1/3 h-full"
+                >
+                  <div className="day bg-[#3C3C44] bg-opacity-20 rounded-lg text-center">
+                    {weather.date}
+                  </div>
+                  <img
+                    src={weather.day.condition.icon}
+                    alt="weather icon"
+                    className="w-icon w-20"
+                  />
+                  <div className="temp font-semibold py-2">
+                    {weather.day.condition.text}
+                  </div>
+                  <div className="temp font-semibold">
+                    temp - {weather.day.avgtemp_c}&#176;
+                  </div>
+                  <div className="temp font-semibold">
+                    Wind - {weather.day.maxwind_mph}mph
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </div>
