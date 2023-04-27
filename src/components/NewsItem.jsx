@@ -1,6 +1,6 @@
 import React from "react";
 
-const NewsItem = ({ title, description, url, urlToImage }) => {
+const NewsItem = ({ title, author, url, publishedAt, urlToImage }) => {
   return (
     <div className="news-app border-4 border-pink-500">
       <div className="news-item">
@@ -8,7 +8,7 @@ const NewsItem = ({ title, description, url, urlToImage }) => {
         <h3>
           <a href={url}>{title}</a>
         </h3>
-        <p>{description}</p>
+        <p>{title}</p>
       </div>
     </div>
   );

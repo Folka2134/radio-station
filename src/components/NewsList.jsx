@@ -10,7 +10,7 @@ const NewsList = () => {
       const response = await axios.get(
         `https://newsapi.org/v2/everything?q=football&apiKey=e8595e4b47e84734a68dd77c856a6b63`
       );
-      setArticles(response.data.articles.slice(0, 3));
+      setArticles(response.data.articles.slice(0, 4));
     };
 
     getArticles();
@@ -23,8 +23,9 @@ const NewsList = () => {
           <NewsItem
             key={key}
             title={article.title}
-            description={article.description}
+            author={article.author}
             url={article.url}
+            publishedAt={article.publishedAt}
             urlToImage={article.urlToImage}
           />
         );

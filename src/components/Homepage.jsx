@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Weather from "./Weather";
+import NewsList from "./NewsList";
 
 const Homepage = () => {
   return (
