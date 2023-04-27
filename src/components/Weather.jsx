@@ -6,9 +6,6 @@ const Weather = () => {
   const API_KEY = "8a32bc17bfde477e8d8175552211011";
 
   async function getWeatherData() {
-    // navigator.geolocation.getCurrentPosition((success) => {
-    //   let { latitude, longitude } = success.coords;
-    // console.log(latitude, longitude);
     const res = await fetch(
       `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=Plymouth&days=3&aqi=no&alerts=no`
     );
@@ -20,9 +17,9 @@ const Weather = () => {
     }
   }
 
-  // useEffect(() => {
-  //   getWeatherData();
-  // }, []);
+  useEffect(() => {
+    getWeatherData();
+  }, []);
 
   const today = new Date();
 
