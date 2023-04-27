@@ -12,18 +12,12 @@ const Weather = () => {
     try {
       const data = await res.json();
       setWeatherData(data);
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   }
 
   useEffect(() => {
     getWeatherData();
   }, []);
-
-  const today = new Date();
-
-  // console.log(weatherData.forecast.forecastday);
 
   return (
     <div className="p-4 z-0 w-full">
@@ -45,7 +39,9 @@ const Weather = () => {
                     className="weather-forecast-item flex flex-col items-center justify-center m-4 h-full md:w-52"
                   >
                     <div className="day bg-[#3C3C44] bg-opacity-20 rounded-lg text-center">
-                      {weather.date}
+                      {new Date(weather.date).toLocaleString("en-US", {
+                        weekday: "long",
+                      })}
                     </div>
                     <img
                       src={weather.day.condition.icon}
