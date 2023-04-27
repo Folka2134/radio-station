@@ -13,7 +13,7 @@ const Homepage = () => {
       <p className="text-[1rem] text-black dark:text-white text-opacity-80">
         Based in the port city of Plymouth - Devon - UK.
       </p>
-      <div className="flex rounded-3xl bg-[url('./assets/plymouth.webp')] backdrop-blur-sm bg-white/30 backdrop-hue-rotate-90  bg-cover bg-top my-16 relative">
+      <div className="flex rounded-3xl bg-[url('./assets/plymouth.webp')] backdrop-blur-sm bg-white/30 backdrop-hue-rotate-90  bg-cover bg-top my-16 relative w-min">
         <div className="bg-black w-full h-full rounded-3xl bg-opacity-70 absolute -z-20"></div>
         <Weather />
       </div>
