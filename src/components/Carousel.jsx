@@ -13,7 +13,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className=" overflow-hidden">
+    <div className="overflow-hidden">
       <motion.h1
         ref={carousel}
         className="carousel cursor-move overflow-hidden"
@@ -27,7 +27,7 @@ const Carousel = () => {
           {presenters.map((presenter, keyId) => (
             <motion.div
               key={keyId}
-              className="item h-[14rem] min-w-[10rem] py-8 px-2"
+              className="item h-[14rem] min-w-[10rem] py-6 px-2"
             >
               <img
                 className="w-full h-full border-2 border-black pointer-events-none rounded-xl object-cover object-top"

@@ -22,7 +22,7 @@ const Weather = () => {
   return (
     <div className="p-4 z-0 w-full">
       <div className="text-white">
-        <div className="future-forecast flex  text-white justify-center items-center relative">
+        <div className="future-forecast flex text-white justify-center items-center relative">
           <div className="absolute top-0 left-0">
             <h4 className="">{weatherData && weatherData.location.name}</h4>
           </div>
