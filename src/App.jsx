@@ -70,19 +70,19 @@ function App() {
           <nav className="flex sticky  top-0 w-full  md:justify-center bg-white dark:bg-[#0E1012] bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-black dark:text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
             <ul className="hidden md:flex ">
               <button
-                className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
+                className="text-xl p-5 cursor-pointer hover:text-gray-500 dark:hover:text-white transition-all duration-200"
                 onClick={() => setRoute("home")}
               >
                 Home
               </button>
               <button
-                className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
+                className="text-xl p-5 cursor-pointer hover:text-gray-500 dark:hover:text-white transition-all duration-200"
                 onClick={() => setRoute("radio")}
               >
                 Radio
               </button>
               <button
-                className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
+                className="text-xl p-5 cursor-pointer hover:text-gray-500 dark:hover:text-white transition-all duration-200"
                 onClick={() => setRoute("contact")}
               >
                 Contact
