@@ -45,16 +45,8 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 0);
+    }, 500);
   }, []);
-
-  // useEffect(() => {
-  //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  //     setTheme("dark");
-  //   } else {
-  //     setTheme("light");
-  //   }
-  // }, []);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -76,7 +68,6 @@ function App() {
         <div className="flex flex-col bg-white dark:bg-[#0E1012] min-h-screen relative fadeIn">
           {/* NAV */}
           <nav className="flex sticky  top-0 w-full  md:justify-center bg-white dark:bg-[#0E1012] bg-opacity-80  backdrop-blur-md  backdrop-grayscale text-black dark:text-gray-300  border-opacity-40 rounded-b-lg md:mb-10 z-20">
-            {/* <div></div> */}
             <ul className="hidden md:flex ">
               <button
                 className="text-xl p-5 cursor-pointer hover:text-white transition-all duration-200"
@@ -115,12 +106,12 @@ function App() {
             </button>
           </nav>
           {/* <section className="advertisement 2xl:flex flex-col w-96 2xl:w-40 3xl:w-48 4xl:w-60 5xl:w-80 absolute hidden bottom-0 2xl:top-28 2xl:right-0 rounded-lg h-min">
-          <div className="border-white border-2 text-white ">Advert</div>
-          <div className="border-white border-2 text-white ">Advert</div>
-          <div className="border-white border-2 text-white ">Advert</div>
-          <div className="border-white border-2 text-white ">Advert</div>
-          <div className="border-white border-2 text-white ">Advert</div>
-        </section> */}
+            <div className="border-white border-2 text-white ">Advert</div>
+            <div className="border-white border-2 text-white ">Advert</div>
+            <div className="border-white border-2 text-white ">Advert</div>
+            <div className="border-white border-2 text-white ">Advert</div>
+            <div className="border-white border-2 text-white ">Advert</div>
+          </section> */}
           <div className="mx-6 lg:mx-12 xl:mx-24 2xl:mx-44 3xl:mx-52 4xl:mx-72 5xl:mx-96 z-10 relative">
             <header className="flex flex-col md:flex-row justify-center items-center pt-3 mb-3">
               <div className="flex justify-center md:mr-5 mb-2 ">
@@ -138,12 +129,11 @@ function App() {
                     <BsFillPlayFill size={35} />
                   </button>
                 </div>
-                <div className="bg-white rounded-xl text-black">
+                <div className="bg-white hover:bg-[#4AEC72] rounded-xl text-black transition-colors duration-100">
                   <h2>Make a request!</h2>
                 </div>
               </div>
             </header>
-            <div className="sticky top-16"></div>
             <div className="flex flex-col mb-10">{renderSwitch(route)}</div>
           </div>
           <footer className="flex flex-col md:flex-row justify-center items-center py-4 bg-[#1D1D1D] text-gray-300 mt-auto">
